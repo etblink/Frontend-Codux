@@ -1,8 +1,8 @@
 import classNames from 'classnames';
-import styles from './community-page.module.scss';
-import { Cards } from '../cards/cards';
+import styles from './cards.module.scss';
+import { PostCard } from '../post-card/post-card';
 
-export interface CommunityPageProps {
+export interface CardsProps {
     className?: string;
 }
 
@@ -10,8 +10,12 @@ export interface CommunityPageProps {
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const CommunityPage = ({ className }: CommunityPageProps) => {
+export const Cards = ({ className }: CardsProps) => {
     return <div className={classNames(styles.root, className)}>
-        <Cards />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
     </div>;
 };
