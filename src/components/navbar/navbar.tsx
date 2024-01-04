@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import styles from './navbar.module.scss';
+import { Link } from 'react-router-dom';
 
 export interface NavbarProps {
     className?: string;
@@ -11,7 +12,8 @@ export interface NavbarProps {
  */
 export const Navbar = ({ className }: NavbarProps) => {
     return <div className={classNames(styles.root, className)}>
-        <a href="#" className={styles['nav-link']}>Home</a>
-        <a href="#" className={styles['nav-link']}>Community</a>
+        <Link to="/" className={styles['nav-link']}>Home</Link>
+        <Link to="/community" className={styles['nav-link']}>Community</Link>
+        {/* ... other navbar links */}
     </div>;
 };
