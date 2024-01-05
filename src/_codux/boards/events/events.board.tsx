@@ -5,4 +5,7 @@ export default createBoard({
     name: 'Events',
     Board: () => <Events />,
     isSnippet: true,
+    environmentProps: {
+        windowBackgroundColor: '#605e5e'
+    }
 });

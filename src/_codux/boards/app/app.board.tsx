@@ -6,8 +6,8 @@ import App from '../../../App';
 export default createBoard({
     name: 'App',
     Board: () => (
-        <MemoryRouter initialEntries={['/']}>
+        // <MemoryRouter initialEntries={['/']}>
             <App />
-        </MemoryRouter>
+        // </MemoryRouter>
     ),
 });
