@@ -16,10 +16,11 @@ export interface HomePageProps {
  */
 export const HomePage = ({ className }: HomePageProps) => {
     return <main className={classNames(styles.root, className)}>
-        <Events />
-        <History />
-        <Specials />
-        <Gallery />
-        <Testimonials />
-    </main>;
+        <div className={styles['app-width']}>
+            <Events />
+            <History />
+            <Specials />
+            <Gallery />
+            <Testimonials />
+        </div></main>;
 };
